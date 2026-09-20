@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f9;
+  color: #222;
+}
+
+h1 {
+  text-align: center;
+}
+
+#soundboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.sound-btn {
+  padding: 20px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-color: #0056b3;
+  color: #ffffff;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* High-contrast focus state for accessibility */
+.sound-btn:focus,
+.sound-btn:focus-visible {
+  outline: 4px solid #ffbf47;
+  background-color: #003d80;
+}
+
+.key-badge {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: normal;
+  margin-top: 5px;
+  color: #dce7f5;
+}

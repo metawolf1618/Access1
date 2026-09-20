@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Soundboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Accessible Soundboard</h1>
+        <p>Use Tab, Arrow keys, or keys 1-6 to play sounds.</p>
+    </header>
+
+    <main>
+      <section id="soundboard" aria-label="Soundboard Controls">
+        <!-- 3 initial semantic HTML buttons with explicit tabindex -->
+        <button class="sound-btn" tabindex="0" data-key="1" data-sound="applause.mp3" aria-label="Play Applause sound, shortcut key 1">
+            Applause <span class="key-badge">(1)</span>
+        </button>
+        <button class="sound-btn" tabindex="0" data-key="2" data-sound="bell.mp3" aria-label="Play Bell sound, shortcut key 2">
+            Bell <span class="key-badge">(2)</span>
+        </button>
+        <button class="sound-btn" tabindex="0" data-key="3" data-sound="cheer.mp3" aria-label="Play Cheer sound, shortcut key 3">
+            Cheer <span class="key-badge">(3)</span>
+        </button>
+      </section>
+    </main>
+    
+    <script type="module" src="js/main1.js"></script>
+    <script type="module" src="js/audio1.js"></script>
+
+    <audio src="assets/AudioOne.mp3"></audio>
+    <audio src="assets/AudioTwo.mpg"></audio>
+    <audio src="assets/AudioThree.mpg"></audio>
+
+</body>
+</html>
